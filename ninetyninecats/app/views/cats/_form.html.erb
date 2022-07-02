@@ -1,0 +1,34 @@
+<form action="<%= cats_url %>" method="post">
+
+    <label> Name
+        <input type="text" name="cat[name]">
+    </label>
+    <br>
+
+    <label> Birth Date
+        <input type="date" name="cat[birth_date]">
+    </label>
+    <br>
+
+    <label> Color
+        <input type="button" name='cat[color]'>
+    </label>
+    <br>
+
+    <label> Sex
+        <input type="radio" name="cat[sex"]>
+    </label>
+    <br>
+
+    <label> Description
+        <input type="text" name="cat[Description">        
+    </label>
+    <br>
+
+    <% if action == :new %>
+        <%= <input type="submit" name="Create cat"> %>
+    <% else %>
+        <%= <input type="submit" name="Update Cat"> %>
+    <% end %>
+
+</form>
